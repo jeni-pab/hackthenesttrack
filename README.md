@@ -84,6 +84,10 @@ Users can select the supplies they need and explore matching resources based on 
 | Google Maps | Directions through public Maps URLs |
 | BigDataCloud / Nominatim | Reverse geocoding for location searches |
 
+## 📊 Data Source
+
+Open Nest uses a nationwide food pantry dataset provided by [Serve.Love](https://www.serve.love/), containing approximately 12,970 food pantry listings across the United States. The original CSV was downloaded in November 2026, cleaned, and reformatted to fit our database structure. The dataset is available under the **[Creative Commons Attribution 4.0 (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)** license. [View the original dataset](https://www.serve.love/resources/food-pantries/data.csv).
+
 ## 🧠 How AI Works
 
 Open Nest uses three server-side AI functions:
