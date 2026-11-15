@@ -1,47 +1,93 @@
-# Project Overview
+# Open Nest 🏡
 
 ## What Is Open Nest?
 
-Open Nest is a community resource platform that helps individuals discover essential resources near them using their city or ZIP code. It is designed to make finding community assistance easier by bringing essential resources together in one accessible platform.
+Open Nest is an AI-powered community resource platform designed to make finding food assistance easier, more accessible, and less overwhelming.
+
+Users can search for food pantries by city or ZIP code, explore available resource information, receive personalized AI recommendations, and access directions—all without creating an account.
 
 ## Why We Built It
 
-Information about food pantries and other essential services is often scattered across different websites and organizations.
+Finding food assistance can be challenging, especially when information is scattered across multiple websites, eligibility requirements are unclear, or language barriers make resources difficult to understand.
 
-We wanted to create a platform that makes these resources easier to discover and access.
+We created Open Nest to bring community resource information into one accessible platform and help individuals find assistance with greater confidence.
 
-## Hackathon Track
+## Hackathon Tracks
 
-- **Main Track:** Future of Intelligence
-- **Sub-tracks:** Base44, Gemini API, ElevenLabs API
+- Best Use of Base44
+- Best Use of Gemini API
+- Best Use of ElevenLabs
+
+## Key Features
+
+- **Community Resource Search:** Search for food assistance using a city or ZIP code.
+- **AI-Powered Assistance:** Describe your situation and receive relevant pantry recommendations powered by Google Gemini.
+- **Multilingual Support:** Access the platform in English, Spanish, Hindi, or Urdu.
+- **Voice Accessibility:** Listen to resource information and AI-generated responses using ElevenLabs, with browser speech as a fallback.
+- **Google Maps Directions:** Open directions to selected food pantries.
+- **Resource Information:** View available addresses, phone numbers, hours, and requirements.
+- **Smart Filtering:** Filter resources based on supported information, including opening hours and confirmed ID requirements.
+- **No Account Required:** Visitors can search for assistance without signing in.
 
 ## Built With
 
-- **Base44:** used to develop and deploy the application.
-- **Gemini API:** powers the "Ask for help" assistant and translates resource listings.
-- **ElevenLabs API:** reads resource information aloud in all four supported languages.
+| Technology | Purpose |
+|---|---|
+| Base44 | Backend functions, database, authentication, and deployment |
+| React 18 | Frontend user interface |
+| Vite | Frontend development and build tooling |
+| Tailwind CSS | Styling and responsive design |
+| Framer Motion | Interface animations |
+| Google Gemini API | AI recommendations and translations |
+| ElevenLabs API | Text-to-speech assistance |
+| Google Maps URLs | Directions to resources |
+| BigDataCloud / Nominatim | Reverse geocoding for location searches |
 
 ## How AI Powers Open Nest
 
-Open Nest uses three backend functions. Each one calls an AI service on the server, so API keys never reach the browser:
+Open Nest integrates AI through three server-side functions:
 
-| Function | AI Service | What It Does |
-| --- | --- | --- |
-| `askForHelp` | Gemini | Answers a visitor's question in their language and points them to relevant pantries |
-| `localizeResources` | Gemini | Translates pantry listings into Spanish, Hindi and Urdu |
-| `speak` | ElevenLabs | Turns resource details into speech for the read-aloud button |
+| Function | Service | Purpose |
+|---|---|---|
+| `askForHelp` | Gemini | Generates recommendations based on user needs and supplied resource records |
+| `localizeResources` | Gemini | Translates resource details into supported languages |
+| `speak` | ElevenLabs | Converts resource information into speech |
 
-**Example flow:** A visitor picks Urdu, searches their ZIP code and asks for help → Gemini answers in Urdu and points them to nearby pantries → they tap read aloud, and ElevenLabs speaks the details.
+API keys remain on the backend rather than being exposed in the browser.
 
-**Keeping it safe and affordable:**
-- Rate limits per visitor and for the whole app protect the paid APIs, with higher per-visitor limits so shared Wi-Fi at shelters and libraries isn't blocked.
-- Translations and AI answers are cached, so repeat requests are fast and don't cost anything extra.
-- Scheduled admin-only cleanup removes old cache and usage records without ever touching pantry listings.
+## Example User Experience
 
-## Languages
+A visitor searches for food assistance using their ZIP code. They can describe their needs in their preferred language and receive recommendations from Gemini explaining why particular resources may be helpful.
 
-English, Spanish, Hindi and Urdu, including right-to-left layout for Urdu.
+The visitor can then review available details, listen to the information, call the organization, or open directions in Google Maps.
+
+When important details are unavailable, Open Nest identifies what still needs to be confirmed rather than inventing information.
 
 ## Coverage
 
-The directory currently lists 15 pantries in Ann Arbor, Ypsilanti and Chelsea, Michigan.
+Open Nest currently contains approximately **12,879 imported resource records** across the United States, including **277 in Michigan**, according to the November 15 project audit.
+
+Coverage and listing completeness vary by location. Pantry hours, eligibility requirements, and available supplies should be confirmed directly with the organization before visiting.
+
+## Security and Responsible AI
+
+- Server-side API integrations protect API credentials.
+- Per-visitor and application-wide rate limits help control usage.
+- Caching reduces repeated AI requests and API costs.
+- AI recommendations are grounded in supplied directory records.
+- Missing or unconfirmed information is clearly identified.
+- Public resource searches do not require account creation.
+
+## Future Improvements
+
+- Expand reliable baby supply, clothing, and hygiene resource coverage.
+- Improve geographic data and distance-based searching.
+- Add a fully interactive map.
+- Improve multilingual voice quality.
+- Expand data verification and freshness checks.
+
+## Our Mission
+
+**Finding help should be simple, accessible, and available to everyone.**
+
+Open Nest combines community resource information with AI and accessibility tools to help people discover assistance when they need it most.

@@ -1,58 +1,89 @@
-# Open Nest 🏡
+# 🏡 Open Nest
 
-A community resource platform that helps individuals discover essential resources near them using their city or ZIP code.
+**Find help. Feel supported.**
 
-## Hackathon Track
+Open Nest is an AI-powered, multilingual community resource platform that helps individuals find food assistance using their city or ZIP code.
 
-- **Main Track:** Future of Intelligence
-- **Sub-tracks:** Base44 · Gemini API · ElevenLabs API
+By combining community resource information with artificial intelligence, translation, and voice accessibility, Open Nest makes it easier for people to discover assistance without navigating multiple websites or creating an account.
 
-## Tech Stack
+## 🚀 Hack The Nest 2026
 
-| Technology | Role |
-| --- | --- |
-| **Base44** | App development, database and deployment |
-| **Gemini API** | AI assistant that answers "Ask for help" questions and translates resource listings |
-| **ElevenLabs API** | Reads resource information aloud in all four supported languages |
+**Hackathon:** Hack The Nest 2026
 
-## Features
+**Sponsor Tracks:**
+- Best Use of Base44
+- Best Use of Gemini API
+- Best Use of ElevenLabs
 
-- **Location-based search:** Find pantries by city or ZIP code, or use your location to sort them by distance.
-- **AI assistant (Gemini):** Ask for help in plain language and get guidance on where to go.
-- **Basket matching:** Add what you need to a basket, and Open Nest recommends the places that cover it.
-- **Read aloud (ElevenLabs):** Listen to resource details for better accessibility.
-- **Four languages:** English, Spanish, Hindi and Urdu, including right-to-left layout for Urdu.
-- **Clear resource cards:** Open/closed status, today's hours, eligibility, what to bring, directions and a call button.
-- **No account needed:** Anyone can search, use the assistant and listen to results without signing in.
-- **Staff dashboard:** Volunteers with admin access can add and edit pantry listings.
-- **Secure and reliable:** Rate limits, cached responses and API keys kept on the backend.
+## ✨ Features
 
-## Screenshots
+### 🔎 Community Resource Search
+Search for food pantries using a city or ZIP code. Open Nest searches its resource directory and displays relevant listings with available contact information, hours, and requirements.
 
-| Homepage | Search | Resources |
-| --- | --- | --- |
-| ![Homepage](screenshots/homepage.png) | ![Search](screenshots/search.png) | ![Resources](screenshots/resources.png) |
+### 🤖 AI-Powered Assistance — Gemini
+Users can describe their situation in everyday language and receive recommendations from the available resource listings.
 
-## Documentation
+Gemini helps explain:
+- Which resources may fit their needs
+- Why those resources were recommended
+- What information remains unconfirmed
+- What steps to take before visiting
 
-- [Project Overview](PROJECT_OVERVIEW.md): what Open Nest is and why we built it.
-- [Development Journal](DEVELOPMENT_JOURNAL.md): how we built it, challenges, what we learned and next steps.
+### 🌎 Multilingual Accessibility
+Open Nest supports four languages:
+- English
+- Spanish
+- Hindi
+- Urdu
 
-## Repository Structure
+The interface also supports right-to-left layouts for Urdu, while Gemini translates resource details.
 
-```
-├── README.md
-├── DEVELOPMENT_JOURNAL.md
-├── PROJECT_OVERVIEW.md
-├── screenshots/
-│   ├── homepage.png
-│   ├── search.png
-│   └── resources.png
-└── data/
-    └── pantry_sample.csv
-```
+### 🔊 Voice Assistance — ElevenLabs
+Users can listen to resource information and AI-generated answers using ElevenLabs text-to-speech, with browser speech as a fallback.
 
-## Project Links
+### 📍 Directions and Contact Information
+Each eligible resource card includes options to open directions in Google Maps or call the organization directly.
 
-- **Live Demo:** [Insert Base44 link]
-- **GitHub Repository:** [github.com/jeni-pab/hackthenesttrack](https://github.com/jeni-pab/hackthenesttrack)
+### 🛒 Resource Basket
+Users can select the supplies they need and explore matching resources based on available category information.
+
+*Basket matching is currently most useful for food-related resources because other category data is limited.*
+
+### ♿ Accessible Experience
+- No account required for public resource searches
+- Mobile-friendly interface
+- Accessible controls and keyboard focus indicators
+- Reduced-motion support
+- Multilingual text and voice assistance
+
+### 🛡️ Security and Reliability
+- API keys stored securely on the backend
+- Rate limits to protect paid AI services
+- Cached AI answers and translations
+- Admin-restricted resource management
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Base44 | Database, backend functions, hosting, and authentication |
+| React 18 | Frontend application |
+| Vite | Build tooling |
+| Tailwind CSS | Styling and responsive layouts |
+| Framer Motion | Interface animations |
+| Gemini API | AI-powered recommendations and translation |
+| ElevenLabs API | Text-to-speech accessibility |
+| Google Maps | Directions through public Maps URLs |
+| BigDataCloud / Nominatim | Reverse geocoding for location searches |
+
+## 🧠 How AI Works
+
+Open Nest uses three server-side AI functions:
+
+| Function | Service | Purpose |
+|---|---|---|
+| `askForHelp` | Gemini | Generates grounded resource recommendations |
+| `localizeResources` | Gemini | Translates resource information |
+| `speak` | ElevenLabs | Converts text into speech |
+
+AI recommendations use supplied directory
