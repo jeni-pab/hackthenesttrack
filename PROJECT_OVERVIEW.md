@@ -14,9 +14,16 @@ We created Open Nest to bring community resource information into one accessible
 
 ## Hackathon Tracks
 
+**Main Track:** Future of Intelligence
+
+**Sponsor Tracks:**
 - Best Use of Base44
 - Best Use of Gemini API
 - Best Use of ElevenLabs
+
+**MLH Track:** DEV Writing
+
+**Event Track:** Best Beginner
 
 ## Key Features
 

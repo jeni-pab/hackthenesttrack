@@ -12,13 +12,19 @@ By combining community resource information with artificial intelligence, transl
 
 **Hackathon:** Hack The Nest 2026
 
-**Main Track:** 
+**Main Track:**
 - Future of Intelligence
 
 **Sponsor Tracks:**
 - Best Use of Base44
 - Best Use of Gemini API
 - Best Use of ElevenLabs
+
+**MLH Track:**
+- DEV Writing
+
+**Event Track:**
+- Best Beginner
 
 ## ✨ Features
 
@@ -99,6 +105,14 @@ AI recommendations use supplied directory records only, so the assistant recomme
 
 ![AI assistant and multilingual search](screenshots/Screenshot%202026-11-15%20at%207.22.25%E2%80%AFAM.png)
 
+
+## 👥 Team
+
+| Name | GitHub |
+|---|---|
+| Sarah Mall | [@mallsarah06](https://github.com/mallsarah) |
+| Lavisha Chandivade | [@lavishac](https://github.com/lavishac) |
+| Jeniffer Pablo | [@jeni-pab](https://github.com/jeni-pab) |
 
 ## 🎥 Demo
 
