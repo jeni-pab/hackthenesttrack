@@ -21,8 +21,6 @@ We created Open Nest to bring community resource information into one accessible
 - Best Use of Gemini API
 - Best Use of ElevenLabs
 
-**MLH Track:** DEV Writing
-
 **Event Track:** Best Beginner
 
 ## Key Features

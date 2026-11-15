@@ -20,9 +20,6 @@ By combining community resource information with artificial intelligence, transl
 - Best Use of Gemini API
 - Best Use of ElevenLabs
 
-**MLH Track:**
-- DEV Writing
-
 **Event Track:**
 - Best Beginner
 
