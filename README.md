@@ -12,8 +12,8 @@ By combining community resource information with artificial intelligence, transl
 
 **Hackathon:** Hack The Nest 2026
 
-**Main track:** 
-Future of Intelligence
+**Main Track:** 
+- Future of Intelligence
 
 **Sponsor Tracks:**
 - Best Use of Base44
