@@ -2,6 +2,9 @@
 
 A community resource platform that helps individuals discover essential resources near them using their city or ZIP code.
 
+🔗 **Try it live:** https://open-nest.base44.app
+
+
 ## Hackathon Track
 
 - **Main Track:** Future of Intelligence
