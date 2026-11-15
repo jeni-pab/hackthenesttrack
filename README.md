@@ -91,4 +91,18 @@ Open Nest uses three server-side AI functions:
 | `localizeResources` | Gemini | Translates resource information |
 | `speak` | ElevenLabs | Converts text into speech |
 
-AI recommendations use supplied directory
+AI recommendations use supplied directory records only, so the assistant recommends real listings from the data and never invents resources or details that are not present.
+
+## 📸 Screenshots
+
+![Open Nest home screen](screenshots/Screenshot%202026-11-15%20at%207.21.56%E2%80%AFAM.png)
+
+![AI assistant and multilingual search](screenshots/Screenshot%202026-11-15%20at%207.22.25%E2%80%AFAM.png)
+
+
+## 🎥 Demo
+
+🔗 **Live app:** https://open-nest.base44.app
+
+📺 **Demo video:** _link coming soon_
+
