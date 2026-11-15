@@ -1,0 +1,135 @@
+.page {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.top h1 {
+  margin: 8px 0 12px;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.lede {
+  max-width: 38rem;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: minmax(220px, 280px) 1fr;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.board h2 {
+  margin: 18px 0 8px;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.board ul,
+.links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.board button {
+  width: 100%;
+  margin: 0 0 6px;
+  padding: 10px 12px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.board button:hover,
+.board button.on {
+  border-color: var(--line);
+  background: var(--panel);
+}
+
+.board button.on {
+  color: var(--gold);
+}
+
+.brief {
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--panel);
+}
+
+.brief h2 {
+  margin: 8px 0 12px;
+  font-size: 2rem;
+  letter-spacing: -0.03em;
+}
+
+.brief h3 {
+  margin: 22px 0 8px;
+  font-size: 0.95rem;
+}
+
+.brief p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.links a {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--gold);
+  color: #1a1408;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.next {
+  margin-top: 22px !important;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.92em;
+}
+
+@media (max-width: 760px) {
+  .page {
+    padding: 28px 16px 64px;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
